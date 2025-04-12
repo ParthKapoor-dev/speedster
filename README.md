@@ -11,7 +11,7 @@
 ## 📸 Preview
 
 ```bash
-$ ./speedtest download https://speedtest.tele2.net/5MB.zip
+$ ./speedster download https://speedtest.tele2.net/5MB.zip
 
 Starting download test from: https://speedtest.tele2.net/5MB.zip
 Downloaded 5.00 MB in 1.37 seconds
@@ -34,9 +34,9 @@ Download speed: 29.20 Mbps
 ## 🔧 Installation
 
 ```bash
-git clone https://github.com/yourname/speedtest-cli.git
-cd speedtest-cli
-go build -o speedtest
+git clone https://github.com/parthkapoor-dev/speedster.git
+cd speedster
+go install
 ```
 
 > Make sure you have Go installed (v1.18+). Get it here: https://go.dev/dl/
@@ -47,12 +47,12 @@ go build -o speedtest
 
 ### Test Download Speed:
 ```bash
-./speedtest download https://speedtest.tele2.net/10MB.zip
+./speedster download https://speedtest.tele2.net/10MB.zip
 ```
 
 ### Run Help
 ```bash
-./speedtest help
+./speedster help
 ```
 
 ---
