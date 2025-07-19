@@ -8,16 +8,12 @@ import (
 )
 
 func main() {
+	m := tui.InitModel()
+	p := tea.NewProgram(m)
 
-	if _, err := tea.NewProgram(tui.InitModel()).Run(); err != nil {
+	m.Program = p
+
+	if _, err := p.Run(); err != nil {
 		log.Fatal(err)
 	}
-
-	// result, err := speed.NewSpeedTest().Start()
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-
-	// fmt.Printf("Downloaded %.2f MB in %.2f seconds\n", result.Download.Buffer, result.Download.Duration)
-	// fmt.Printf("Download speed: %.2f Mbps\n", result.Download.Mbps)
 }
